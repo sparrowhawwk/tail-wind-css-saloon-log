@@ -20,7 +20,7 @@ export default function Today() {
                                 id="phone_number" name="phone_number"/>
                         </div>
                     </div>
-                    <div className="flex">
+                    <div className="flex mb-5">
                         <div className="w-1/3">
                             <label htmlFor="cs_age" className="mb-1 block">Age</label>
                             <input type="number" className="form-input rounded border border-solid border-slate-200 p-2 w-5/6"
@@ -37,6 +37,11 @@ export default function Today() {
                             <label htmlFor="cs_male" className="mr-2">Male</label>
                             <input type="radio" name="cs_gender" id="cs_female" className="mr-2"/>
                             <label htmlFor="cs_male">Female</label>
+                        </div>
+                    </div>
+                    <div className="flex">
+                        <div className="w-full">
+                            <button className="rounded bg-green-500 border border-solid border-green-200 pt-1 pb-1 pr-4 pl-4 text-white">Log</button>
                         </div>
                     </div>
                 </div>
