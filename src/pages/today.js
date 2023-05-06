@@ -72,19 +72,17 @@ export default function Today() {
                         <tbody className="overflow-y-auto max-h-20">
                             {
                                 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(
-                                    value => {
+                                    (value) => {
                                         return (
-                                            <>
-                                                <tr className="border-b dark:border-neutral-500 ease-in-out hover:bg-neutral-100" key={value}>
-                                                    <td className="whitespace-nowrap px-6 py-4">1</td>
-                                                    <td className="whitespace-nowrap px-6 py-4">Rahul</td>
-                                                    <td className="whitespace-nowrap px-6 py-4">Sultan</td>
-                                                    <td className="whitespace-nowrap px-6 py-4">26</td>
-                                                    <td className="whitespace-nowrap px-6 py-4">Male</td>
-                                                    <td className="whitespace-nowrap px-6 py-4">110</td>
-                                                    <td className="whitespace-nowrap px-6 py-4">30/04/2023</td>
-                                                </tr>
-                                            </>
+                                            <tr className="border-b dark:border-neutral-500 ease-in-out hover:bg-neutral-100" key={value.toString()}>
+                                                <td className="whitespace-nowrap px-6 py-4">1</td>
+                                                <td className="whitespace-nowrap px-6 py-4">Rahul</td>
+                                                <td className="whitespace-nowrap px-6 py-4">Sultan</td>
+                                                <td className="whitespace-nowrap px-6 py-4">26</td>
+                                                <td className="whitespace-nowrap px-6 py-4">Male</td>
+                                                <td className="whitespace-nowrap px-6 py-4">110</td>
+                                                <td className="whitespace-nowrap px-6 py-4">30/04/2023</td>
+                                            </tr>
                                         );
                                     }
                                 )
